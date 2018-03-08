@@ -13,6 +13,7 @@
 		848E9BE02050742E0069A6FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848E9BDF2050742E0069A6FB /* Assets.xcassets */; };
 		848E9BE32050742E0069A6FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848E9BE12050742E0069A6FB /* LaunchScreen.storyboard */; };
 		848E9BEE2050742F0069A6FB /* FaceBookRegPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848E9BED2050742F0069A6FB /* FaceBookRegPracticeTests.swift */; };
+		AFF443FAF31A672CE233E27A /* Pods_FaceBookRegPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5AA2F6D876DEAE278FAEC7 /* Pods_FaceBookRegPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		848E9BE92050742F0069A6FB /* FaceBookRegPracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceBookRegPracticeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		848E9BED2050742F0069A6FB /* FaceBookRegPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookRegPracticeTests.swift; sourceTree = "<group>"; };
 		848E9BEF2050742F0069A6FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8903B216CA0B2D44CF74C503 /* Pods-FaceBookRegPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceBookRegPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FaceBookRegPractice/Pods-FaceBookRegPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5AA2F6D876DEAE278FAEC7 /* Pods_FaceBookRegPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FaceBookRegPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1EEA923324D65D9DF7AD0DB /* Pods-FaceBookRegPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceBookRegPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-FaceBookRegPractice/Pods-FaceBookRegPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFF443FAF31A672CE233E27A /* Pods_FaceBookRegPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		702208B761DE96DAB9C30F75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8903B216CA0B2D44CF74C503 /* Pods-FaceBookRegPractice.debug.xcconfig */,
+				E1EEA923324D65D9DF7AD0DB /* Pods-FaceBookRegPractice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		829208D4E31FCEC651168A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5AA2F6D876DEAE278FAEC7 /* Pods_FaceBookRegPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		848E9BCC2050742E0069A6FB = {
 			isa = PBXGroup;
 			children = (
 				848E9BD72050742E0069A6FB /* FaceBookRegPractice */,
 				848E9BEC2050742F0069A6FB /* FaceBookRegPracticeTests */,
 				848E9BD62050742E0069A6FB /* Products */,
+				702208B761DE96DAB9C30F75 /* Pods */,
+				829208D4E31FCEC651168A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848E9BF22050742F0069A6FB /* Build configuration list for PBXNativeTarget "FaceBookRegPractice" */;
 			buildPhases = (
+				47652723945DBD607C91D43A /* [CP] Check Pods Manifest.lock */,
 				848E9BD12050742E0069A6FB /* Sources */,
 				848E9BD22050742E0069A6FB /* Frameworks */,
 				848E9BD32050742E0069A6FB /* Resources */,
+				5F656B3E0052E91BC2B931C7 /* [CP] Embed Pods Frameworks */,
+				0DBB5563FE0F9FB9C84FA67F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +220,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DBB5563FE0F9FB9C84FA67F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceBookRegPractice/Pods-FaceBookRegPractice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47652723945DBD607C91D43A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FaceBookRegPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F656B3E0052E91BC2B931C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FaceBookRegPractice/Pods-FaceBookRegPractice-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/M13Checkbox/M13Checkbox.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/M13Checkbox.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FaceBookRegPractice/Pods-FaceBookRegPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		848E9BD12050742E0069A6FB /* Sources */ = {
@@ -351,6 +432,7 @@
 		};
 		848E9BF32050742F0069A6FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8903B216CA0B2D44CF74C503 /* Pods-FaceBookRegPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -368,6 +450,7 @@
 		};
 		848E9BF42050742F0069A6FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EEA923324D65D9DF7AD0DB /* Pods-FaceBookRegPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
